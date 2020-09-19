@@ -1,0 +1,970 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+		<title>テーブル定義書</title>
+		<link rel="stylesheet" href="a5m2.css">
+	</head>
+	<body>
+	<table border="1">
+		<caption>エンティティ情報</caption>
+			<colgroup>
+				<col width="115">
+				<col width="180">
+				<col width="115">
+				<col width="180">
+			</colgroup>
+			<th>システム名</th>
+			<td>&nbsp;</td>
+			<th>作成者</th>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<th>サブシステム名</th>
+			<td>&nbsp;</td>
+			<th>作成日</th>
+			<td>2020/08/29&nbsp;</td>
+		</tr>
+		<tr>
+			<th>スキーマ名</th>
+			<td>&nbsp;</td>
+			<th>更新日</th>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<th>論理エンティティ名</th>
+			<td>勤怠集計データ&nbsp;</td>
+			<th>タグ&nbsp;</th>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<th>物理エンティティ名</th>
+			<td>tmd_total_time&nbsp;</td>
+			<th>&nbsp;</th>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="4"><b>備考</b><br></td>
+		</tr>
+	</table>
+
+<br>
+<br>
+	<table border="1">
+		<caption>カラム情報</caption>
+			<colgroup>
+				<col width="30">
+				<col width="120">
+				<col width="120">
+				<col width="100">
+				<col width="60">
+				<col width="60">
+				<col width="100">
+			</colgroup>
+		<tr>
+			<th>No.</th>
+			<th>論理名</th>
+			<th>物理名</th>
+			<th>データ型</th>
+			<th>Not Null</th>
+			<th>デフォルト</th>
+			<th>備考</th>
+		</tr>
+		<tr>
+			<td style="text-align:right;">1</td>
+			<td>レコード識別ID</td>
+			<td>tmd_total_time_id</td>
+			<td>bigint</td>
+			<td>Yes (PK)</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">2</td>
+			<td>個人ID</td>
+			<td>personal_id</td>
+			<td>character&#32;varying(10)</td>
+			<td>Yes</td>
+			<td>''</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">3</td>
+			<td>年</td>
+			<td>calculation_year</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">4</td>
+			<td>月</td>
+			<td>calculation_month</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">5</td>
+			<td>集計日</td>
+			<td>calculation_date</td>
+			<td>date</td>
+			<td>Yes</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">6</td>
+			<td>勤務時間</td>
+			<td>work_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">7</td>
+			<td>所定勤務時間</td>
+			<td>specific_work_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">8</td>
+			<td>契約勤務時間</td>
+			<td>contract_work_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">9</td>
+			<td>無給時短時間</td>
+			<td>short_unpaid</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">10</td>
+			<td>出勤日数</td>
+			<td>times_work_date</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">11</td>
+			<td>出勤回数</td>
+			<td>times_work</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">12</td>
+			<td>法定休日出勤日数</td>
+			<td>legal_work_on_holiday</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">13</td>
+			<td>所定休日出勤日数</td>
+			<td>specific_work_on_holiday</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">14</td>
+			<td>出勤実績日数</td>
+			<td>times_achievement</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">15</td>
+			<td>出勤対象日数</td>
+			<td>times_total_work_date</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">16</td>
+			<td>直行回数</td>
+			<td>direct_start</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">17</td>
+			<td>直帰回数</td>
+			<td>direct_end</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">18</td>
+			<td>休憩時間</td>
+			<td>rest_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">19</td>
+			<td>深夜休憩時間</td>
+			<td>rest_late_night</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">20</td>
+			<td>所定休出休憩時間</td>
+			<td>rest_work_on_specific_holiday</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">21</td>
+			<td>法定休出休憩時間</td>
+			<td>rest_work_on_holiday</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">22</td>
+			<td>公用外出時間</td>
+			<td>public_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">23</td>
+			<td>私用外出時間</td>
+			<td>private_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">24</td>
+			<td>分単位休暇A時間</td>
+			<td>minutely_holiday_a_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">25</td>
+			<td>分単位休暇B時間</td>
+			<td>minutely_holiday_b_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">26</td>
+			<td>残業時間</td>
+			<td>overtime</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">27</td>
+			<td>法定内残業時間</td>
+			<td>overtime_in</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">28</td>
+			<td>法定外残業時間</td>
+			<td>overtime_out</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">29</td>
+			<td>深夜時間</td>
+			<td>late_night</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">30</td>
+			<td>所定休出時間</td>
+			<td>work_on_specific_holiday</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">31</td>
+			<td>法定休出時間</td>
+			<td>work_on_holiday</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">32</td>
+			<td>減額対象時間</td>
+			<td>decrease_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">33</td>
+			<td>45時間超残業時間</td>
+			<td>forty_five_hour_overtime</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">34</td>
+			<td>残業回数</td>
+			<td>times_overtime</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">35</td>
+			<td>休日出勤回数</td>
+			<td>times_working_holiday</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">36</td>
+			<td>遅刻合計日数</td>
+			<td>late_days</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">37</td>
+			<td>遅刻30分以上日数</td>
+			<td>late_thirty_minutes_or_more</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">38</td>
+			<td>遅刻30分未満日数</td>
+			<td>late_less_than_thirty_minutes</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">39</td>
+			<td>遅刻合計時間</td>
+			<td>late_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">40</td>
+			<td>遅刻30分以上時間</td>
+			<td>late_thirty_minutes_or_more_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">41</td>
+			<td>遅刻30分未満時間</td>
+			<td>late_less_than_thirty_minutes_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">42</td>
+			<td>遅刻合計回数</td>
+			<td>times_late</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">43</td>
+			<td>早退合計日数</td>
+			<td>leave_early_days</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">44</td>
+			<td>早退30分以上日数</td>
+			<td>leave_early_thirty_minutes_or_more</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">45</td>
+			<td>早退30分未満日数</td>
+			<td>leave_early_less_than_thirty_minutes</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">46</td>
+			<td>早退合計時間</td>
+			<td>leave_early_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">47</td>
+			<td>早退30分以上時間</td>
+			<td>leave_early_thirty_minutes_or_more_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">48</td>
+			<td>早退30分未満時間</td>
+			<td>leave_early_less_than_thirty_minutes_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">49</td>
+			<td>早退合計回数</td>
+			<td>times_leave_early</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">50</td>
+			<td>合計休日日数</td>
+			<td>times_holiday</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">51</td>
+			<td>法定休日日数</td>
+			<td>times_legal_holiday</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">52</td>
+			<td>所定休日日数</td>
+			<td>times_specific_holiday</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">53</td>
+			<td>有給休暇日数</td>
+			<td>times_paid_holiday</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">54</td>
+			<td>有給休暇時間</td>
+			<td>paid_holiday_hour</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">55</td>
+			<td>ストック休暇日数</td>
+			<td>times_stock_holiday</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">56</td>
+			<td>合計代休日数</td>
+			<td>times_compensation</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">57</td>
+			<td>法定代休日数</td>
+			<td>times_legal_compensation</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">58</td>
+			<td>所定代休日数</td>
+			<td>times_specific_compensation</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">59</td>
+			<td>深夜代休日数</td>
+			<td>times_late_compensation</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">60</td>
+			<td>合計振替休日日数</td>
+			<td>times_holiday_substitute</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">61</td>
+			<td>法定振替休日日数</td>
+			<td>times_legal_holiday_substitute</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">62</td>
+			<td>所定振替休日日数</td>
+			<td>times_specific_holiday_substitute</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">63</td>
+			<td>特別休暇合計日数</td>
+			<td>total_special_holiday</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">64</td>
+			<td>その他休暇合計日数</td>
+			<td>total_other_holiday</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">65</td>
+			<td>欠勤合計日数</td>
+			<td>total_absence</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">66</td>
+			<td>手当合計</td>
+			<td>total_allowance</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">67</td>
+			<td>60時間超残業時間</td>
+			<td>sixty_hour_overtime</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">68</td>
+			<td>平日時間外時間</td>
+			<td>week_day_overtime</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">69</td>
+			<td>所定休日時間外時間</td>
+			<td>specific_overtime</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">70</td>
+			<td>代替休暇日数</td>
+			<td>times_alternative</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">71</td>
+			<td>法定代休発生日数</td>
+			<td>legal_compensation_occurred</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">72</td>
+			<td>所定代休発生日数</td>
+			<td>specific_compensation_occurred</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">73</td>
+			<td>深夜代休発生日数</td>
+			<td>late_compensation_occurred</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">74</td>
+			<td>法定代休未取得日数</td>
+			<td>legal_compensation_unused</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">75</td>
+			<td>所定代休未取得日数</td>
+			<td>specific_compensation_unused</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">76</td>
+			<td>深夜代休未取得日数</td>
+			<td>late_compensation_unused</td>
+			<td>double&#32;precision</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">77</td>
+			<td>所定労働時間内法定休日労働時間</td>
+			<td>statutory_holiday_work_time_in</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">78</td>
+			<td>所定労働時間外法定休日労働時間</td>
+			<td>statutory_holiday_work_time_out</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">79</td>
+			<td>所定労働時間内所定休日労働時間</td>
+			<td>prescribed_holiday_work_time_in</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">80</td>
+			<td>所定労働時間外所定休日労働時間</td>
+			<td>prescribed_holiday_work_time_out</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">81</td>
+			<td>週40時間超勤務時間</td>
+			<td>weekly_over_forty_hour_work_time</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">82</td>
+			<td>法定内残業時間(週40時間超除く)</td>
+			<td>overtime_in_no_weekly_forty</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">83</td>
+			<td>法定外残業時間(週40時間超除く)</td>
+			<td>overtime_out_no_weekly_forty</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">84</td>
+			<td>平日残業合計時間</td>
+			<td>week_day_overtime_total</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">85</td>
+			<td>平日時間内時間(週40時間超除く)</td>
+			<td>week_day_overtime_in_no_weekly_forty</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">86</td>
+			<td>平日時間外時間(週40時間超除く)</td>
+			<td>week_day_overtime_out_no_weekly_forty</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">87</td>
+			<td>平日時間内時間</td>
+			<td>week_day_overtime_in</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">88</td>
+			<td>削除フラグ</td>
+			<td>delete_flag</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">89</td>
+			<td>登録日</td>
+			<td>insert_date</td>
+			<td>timestamp(6)&#32;without&#32;time&#32;zone</td>
+			<td>Yes</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">90</td>
+			<td>登録者</td>
+			<td>insert_user</td>
+			<td>character&#32;varying(50)</td>
+			<td>Yes</td>
+			<td>''</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">91</td>
+			<td>更新日</td>
+			<td>update_date</td>
+			<td>timestamp(6)&#32;without&#32;time&#32;zone</td>
+			<td>Yes</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">92</td>
+			<td>更新者</td>
+			<td>update_user</td>
+			<td>character&#32;varying(50)</td>
+			<td>Yes</td>
+			<td>''</td>
+			<td></td>
+		</tr>
+	</table>
+
+<br>
+<br>
+	<table border="1">
+		<caption>インデックス情報</caption>
+			<colgroup>
+				<col width="30">
+				<col width="170">
+				<col width="230">
+				<col width="60">
+				<col width="100">
+			</colgroup>
+		<tr>
+			<th>No.</th>
+			<th>インデックス名</th>
+			<th>カラムリスト</th>
+			<th>ユニーク</th>
+			<th>備考</th>
+		</tr>
+		<tr>
+			<td style="text-align:right;">1</td>
+			<td>tmd_total_time_index1</td>
+			<td>personal_id,calculation_year,calculation_month</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+
+<br>
+<br>
+	<table border="1">
+		<caption>リレーションシップ情報</caption>
+			<colgroup>
+				<col width="30">
+				<col width="120">
+				<col width="160">
+				<col width="120">
+				<col width="160">
+			</colgroup>
+			<th>No.</th>
+			<th>動詞句</th>
+			<th>カラムリスト</th>
+			<th>参照先</th>
+			<th>参照先カラムリスト</th>
+		</tr>
+	</table>
+
+<br>
+<br>
+	<table border="1">
+		<caption>リレーションシップ情報(PK側)</caption>
+			<colgroup>
+				<col width="30">
+				<col width="120">
+				<col width="160">
+				<col width="120">
+				<col width="160">
+			</colgroup>
+		<tr>
+			<th>No.</th>
+			<th>動詞句</th>
+			<th>カラムリスト</th>
+			<th>参照元</th>
+			<th>参照元カラムリスト</th>
+		</tr>
+	</table>
+
+
+	</body>

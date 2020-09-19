@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+		<title>エンティティ定義書</title>
+		<link rel="stylesheet" href="a5m2.css">
+	</head>
+	<body>
+		<h1>エンティティ定義書</h1>
+		<table border="1">
+			<colgroup>
+				<col width="590">
+			</colgroup>
+			<tr>
+				<th>作成者</th>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+<br>
+		<table border="1">
+			<colgroup>
+				<col width="590">
+			</colgroup>
+			<tr>
+				<th>備考</th>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+<br>
+		<table border="1">
+			<colgroup>
+				<col width="30">
+				<col width="150">
+				<col width="150">
+				<col width="160">
+				<col width="100">
+			</colgroup>
+			<tr>
+				<th>No.</th>
+				<th>論理テーブル名</th>
+				<th>物理テーブル名</th>
+				<th>備考</th>
+				<th>タグ</th>
+			</tr>
+			<tr>
+				<td style="text-align:right;">1</td>
+				<td>承認ルートユニットマスタ</td>
+				<td><a href="entities\pfa_approval_route_unit.html">pfa_approval_route_unit</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">2</td>
+				<td>エクスポートフィールド情報</td>
+				<td><a href="entities\pfa_export_field.html">pfa_export_field</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">3</td>
+				<td>人事汎用一覧情報</td>
+				<td><a href="entities\pfa_human_array.html">pfa_human_array</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">4</td>
+				<td>人事汎用バイナリ一覧情報</td>
+				<td><a href="entities\pfa_human_binary_array.html">pfa_human_binary_array</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">5</td>
+				<td>人事汎用バイナリ履歴情報</td>
+				<td><a href="entities\pfa_human_binary_history.html">pfa_human_binary_history</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">6</td>
+				<td>人事汎用バイナリ通常情報</td>
+				<td><a href="entities\pfa_human_binary_normal.html">pfa_human_binary_normal</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">7</td>
+				<td>人事兼務情報</td>
+				<td><a href="entities\pfa_human_concurrent.html">pfa_human_concurrent</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">8</td>
+				<td>人事入社情報</td>
+				<td><a href="entities\pfa_human_entrance.html">pfa_human_entrance</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">9</td>
+				<td>人事汎用履歴情報</td>
+				<td><a href="entities\pfa_human_history.html">pfa_human_history</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">10</td>
+				<td>人事汎用通常情報</td>
+				<td><a href="entities\pfa_human_normal.html">pfa_human_normal</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">11</td>
+				<td>人事退職情報</td>
+				<td><a href="entities\pfa_human_retirement.html">pfa_human_retirement</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">12</td>
+				<td>人事休職情報</td>
+				<td><a href="entities\pfa_human_suspension.html">pfa_human_suspension</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">13</td>
+				<td>インポートフィールド情報</td>
+				<td><a href="entities\pfa_import_field.html">pfa_import_field</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">14</td>
+				<td>ユーザパスワード情報</td>
+				<td><a href="entities\pfa_user_password.html">pfa_user_password</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">15</td>
+				<td>MosP汎用テーブル</td>
+				<td><a href="entities\pfg_general.html">pfg_general</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">16</td>
+				<td>承認ルートマスタ</td>
+				<td><a href="entities\pfm_approval_route.html">pfm_approval_route</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">17</td>
+				<td>承認ユニットマスタ</td>
+				<td><a href="entities\pfm_approval_unit.html">pfm_approval_unit</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">18</td>
+				<td>DBバージョン情報</td>
+				<td><a href="entities\pfm_db_version.html">pfm_db_version</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">19</td>
+				<td>雇用契約マスタ</td>
+				<td><a href="entities\pfm_employment_contract.html">pfm_employment_contract</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">20</td>
+				<td>エクスポートマスタ</td>
+				<td><a href="entities\pfm_export.html">pfm_export</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">21</td>
+				<td>人事マスタ</td>
+				<td><a href="entities\pfm_human.html">pfm_human</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">22</td>
+				<td>ICカードマスタ</td>
+				<td><a href="entities\pfm_ic_card.html">pfm_ic_card</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">23</td>
+				<td>インポートマスタ</td>
+				<td><a href="entities\pfm_import.html">pfm_import</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">24</td>
+				<td>名称区分マスタ</td>
+				<td><a href="entities\pfm_naming.html">pfm_naming</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">25</td>
+				<td>職位マスタ</td>
+				<td><a href="entities\pfm_position.html">pfm_position</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">26</td>
+				<td>ルート適用マスタ</td>
+				<td><a href="entities\pfm_route_application.html">pfm_route_application</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">27</td>
+				<td>所属マスタ</td>
+				<td><a href="entities\pfm_section.html">pfm_section</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">28</td>
+				<td>ユーザマスタ</td>
+				<td><a href="entities\pfm_user.html">pfm_user</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">29</td>
+				<td>勤務地マスタ</td>
+				<td><a href="entities\pfm_work_place.html">pfm_work_place</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">30</td>
+				<td>メッセージテーブル</td>
+				<td><a href="entities\pft_message.html">pft_message</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">31</td>
+				<td>ICカード受付テーブル</td>
+				<td><a href="entities\pft_reception_ic_card.html">pft_reception_ic_card</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">32</td>
+				<td>代理承認者テーブル</td>
+				<td><a href="entities\pft_sub_approver.html">pft_sub_approver</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">33</td>
+				<td>ワークフロー</td>
+				<td><a href="entities\pft_workflow.html">pft_workflow</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">34</td>
+				<td>ワークフローコメント</td>
+				<td><a href="entities\pft_workflow_comment.html">pft_workflow_comment</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">35</td>
+				<td>汎用区分マスタ</td>
+				<td><a href="entities\tam_generic_segment.html">tam_generic_segment</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">36</td>
+				<td>業務コメントトランザクション</td>
+				<td><a href="entities\tat_bizrec_comment.html">tat_bizrec_comment</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">37</td>
+				<td>業務時間トランザクション</td>
+				<td><a href="entities\tat_bizrec_work_time.html">tat_bizrec_work_time</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">38</td>
+				<td>勤務形態パターン項目マスタ</td>
+				<td><a href="entities\tma_work_type_pattern_item.html">tma_work_type_pattern_item</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">39</td>
+				<td>手当データ</td>
+				<td><a href="entities\tmd_allowance.html">tmd_allowance</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">40</td>
+				<td>勤怠データ</td>
+				<td><a href="entities\tmd_attendance.html">tmd_attendance</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">41</td>
+				<td>勤怠修正データ</td>
+				<td><a href="entities\tmd_attendance_correction.html">tmd_attendance_correction</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">42</td>
+				<td>時差出勤申請</td>
+				<td><a href="entities\tmd_difference_request.html">tmd_difference_request</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">43</td>
+				<td>外出データ</td>
+				<td><a href="entities\tmd_go_out.html">tmd_go_out</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">44</td>
+				<td>休暇データ</td>
+				<td><a href="entities\tmd_holiday.html">tmd_holiday</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">45</td>
+				<td>休暇申請</td>
+				<td><a href="entities\tmd_holiday_request.html">tmd_holiday_request</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">46</td>
+				<td>残業申請</td>
+				<td><a href="entities\tmd_overtime_request.html">tmd_overtime_request</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">47</td>
+				<td>有給休暇データ</td>
+				<td><a href="entities\tmd_paid_holiday.html">tmd_paid_holiday</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">48</td>
+				<td>休憩データ</td>
+				<td><a href="entities\tmd_rest.html">tmd_rest</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">49</td>
+				<td>ストック休暇データ</td>
+				<td><a href="entities\tmd_stock_holiday.html">tmd_stock_holiday</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">50</td>
+				<td>振替休日データ</td>
+				<td><a href="entities\tmd_substitute.html">tmd_substitute</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">51</td>
+				<td>代休データ</td>
+				<td><a href="entities\tmd_sub_holiday.html">tmd_sub_holiday</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">52</td>
+				<td>代休申請</td>
+				<td><a href="entities\tmd_sub_holiday_request.html">tmd_sub_holiday_request</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">53</td>
+				<td>時間単位有給休暇データ</td>
+				<td><a href="entities\tmd_timely_paid_holiday.html">tmd_timely_paid_holiday</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">54</td>
+				<td>打刻データ</td>
+				<td><a href="entities\tmd_time_record.html">tmd_time_record</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">55</td>
+				<td>欠勤集計データ</td>
+				<td><a href="entities\tmd_total_absence.html">tmd_total_absence</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">56</td>
+				<td>手当集計データ</td>
+				<td><a href="entities\tmd_total_allowance.html">tmd_total_allowance</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">57</td>
+				<td>特別休暇集計データ</td>
+				<td><a href="entities\tmd_total_leave.html">tmd_total_leave</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">58</td>
+				<td>その他休暇集計データ</td>
+				<td><a href="entities\tmd_total_other_vacation.html">tmd_total_other_vacation</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">59</td>
+				<td>勤怠集計データ</td>
+				<td><a href="entities\tmd_total_time.html">tmd_total_time</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">60</td>
+				<td>勤怠集計修正データ</td>
+				<td><a href="entities\tmd_total_time_correction.html">tmd_total_time_correction</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">61</td>
+				<td>休日出勤申請</td>
+				<td><a href="entities\tmd_work_on_holiday_request.html">tmd_work_on_holiday_request</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">62</td>
+				<td>勤務形態変更申請</td>
+				<td><a href="entities\tmd_work_type_change_request.html">tmd_work_type_change_request</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">63</td>
+				<td>設定適用マスタ</td>
+				<td><a href="entities\tmm_application.html">tmm_application</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">64</td>
+				<td>締日マスタ</td>
+				<td><a href="entities\tmm_cutoff.html">tmm_cutoff</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">65</td>
+				<td>休暇種別マスタ</td>
+				<td><a href="entities\tmm_holiday.html">tmm_holiday</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">66</td>
+				<td>限度基準マスタ</td>
+				<td><a href="entities\tmm_limit_standard.html">tmm_limit_standard</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">67</td>
+				<td>有給休暇マスタ</td>
+				<td><a href="entities\tmm_paid_holiday.html">tmm_paid_holiday</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">68</td>
+				<td>有給休暇入社日マスタ</td>
+				<td><a href="entities\tmm_paid_holiday_entrance_date.html">tmm_paid_holiday_entrance_date</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">69</td>
+				<td>有給休暇初年度マスタ</td>
+				<td><a href="entities\tmm_paid_holiday_first_year.html">tmm_paid_holiday_first_year</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">70</td>
+				<td>有給休暇基準日マスタ</td>
+				<td><a href="entities\tmm_paid_holiday_point_date.html">tmm_paid_holiday_point_date</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">71</td>
+				<td>カレンダマスタ</td>
+				<td><a href="entities\tmm_schedule.html">tmm_schedule</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">72</td>
+				<td>カレンダ日マスタ</td>
+				<td><a href="entities\tmm_schedule_date.html">tmm_schedule_date</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">73</td>
+				<td>ストック休暇マスタ</td>
+				<td><a href="entities\tmm_stock_holiday.html">tmm_stock_holiday</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">74</td>
+				<td>勤怠設定マスタ</td>
+				<td><a href="entities\tmm_time_setting.html">tmm_time_setting</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">75</td>
+				<td>勤務形態マスタ</td>
+				<td><a href="entities\tmm_work_type.html">tmm_work_type</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">76</td>
+				<td>勤務形態項目マスタ</td>
+				<td><a href="entities\tmm_work_type_item.html">tmm_work_type_item</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">77</td>
+				<td>勤務形態パターンマスタ</td>
+				<td><a href="entities\tmm_work_type_pattern.html">tmm_work_type_pattern</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">78</td>
+				<td>勤怠トランザクション</td>
+				<td><a href="entities\tmt_attendance.html">tmt_attendance</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">79</td>
+				<td>有給休暇トランザクション</td>
+				<td><a href="entities\tmt_paid_holiday.html">tmt_paid_holiday</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">80</td>
+				<td>ストック休暇トランザクション</td>
+				<td><a href="entities\tmt_stock_holiday.html">tmt_stock_holiday</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">81</td>
+				<td>勤怠集計管理</td>
+				<td><a href="entities\tmt_total_time.html">tmt_total_time</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align:right;">82</td>
+				<td>社員勤怠集計管理</td>
+				<td><a href="entities\tmt_total_time_employee.html">tmt_total_time_employee</a></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	<br>
+	<a href="domain_list.html">ドメイン一覧</a><br>
+	</body>
+</html>

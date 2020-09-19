@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+		<title>テーブル定義書</title>
+		<link rel="stylesheet" href="a5m2.css">
+	</head>
+	<body>
+	<table border="1">
+		<caption>エンティティ情報</caption>
+			<colgroup>
+				<col width="115">
+				<col width="180">
+				<col width="115">
+				<col width="180">
+			</colgroup>
+			<th>システム名</th>
+			<td>&nbsp;</td>
+			<th>作成者</th>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<th>サブシステム名</th>
+			<td>&nbsp;</td>
+			<th>作成日</th>
+			<td>2020/08/29&nbsp;</td>
+		</tr>
+		<tr>
+			<th>スキーマ名</th>
+			<td>&nbsp;</td>
+			<th>更新日</th>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<th>論理エンティティ名</th>
+			<td>人事汎用バイナリ通常情報&nbsp;</td>
+			<th>タグ&nbsp;</th>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<th>物理エンティティ名</th>
+			<td>pfa_human_binary_normal&nbsp;</td>
+			<th>&nbsp;</th>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="4"><b>備考</b><br></td>
+		</tr>
+	</table>
+
+<br>
+<br>
+	<table border="1">
+		<caption>カラム情報</caption>
+			<colgroup>
+				<col width="30">
+				<col width="120">
+				<col width="120">
+				<col width="100">
+				<col width="60">
+				<col width="60">
+				<col width="100">
+			</colgroup>
+		<tr>
+			<th>No.</th>
+			<th>論理名</th>
+			<th>物理名</th>
+			<th>データ型</th>
+			<th>Not Null</th>
+			<th>デフォルト</th>
+			<th>備考</th>
+		</tr>
+		<tr>
+			<td style="text-align:right;">1</td>
+			<td>レコード識別ID</td>
+			<td>pfa_human_binary_normal_id</td>
+			<td>bigint</td>
+			<td>Yes (PK)</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">2</td>
+			<td>個人ID</td>
+			<td>personal_id</td>
+			<td>character&#32;varying(10)</td>
+			<td>Yes</td>
+			<td>''</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">3</td>
+			<td>人事項目区分</td>
+			<td>human_item_type</td>
+			<td>character&#32;varying(50)</td>
+			<td>Yes</td>
+			<td>''</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">4</td>
+			<td>人事項目バイナリ値</td>
+			<td>human_item_binary</td>
+			<td>bytea</td>
+			<td>&nbsp;</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">5</td>
+			<td>ファイル拡張子</td>
+			<td>file_type</td>
+			<td>character&#32;varying(10)</td>
+			<td>Yes</td>
+			<td>''</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">6</td>
+			<td>ファイル名</td>
+			<td>file_name</td>
+			<td>character&#32;varying(50)</td>
+			<td>Yes</td>
+			<td>''</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">7</td>
+			<td>ファイル備考</td>
+			<td>file_remark</td>
+			<td>text</td>
+			<td>Yes</td>
+			<td>''</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">8</td>
+			<td>無効フラグ</td>
+			<td>inactivate_flag</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">9</td>
+			<td>削除フラグ</td>
+			<td>delete_flag</td>
+			<td>integer</td>
+			<td>Yes</td>
+			<td>0</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">10</td>
+			<td>登録日</td>
+			<td>insert_date</td>
+			<td>timestamp(6)&#32;without&#32;time&#32;zone</td>
+			<td>Yes</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">11</td>
+			<td>登録者</td>
+			<td>insert_user</td>
+			<td>character&#32;varying(50)</td>
+			<td>Yes</td>
+			<td>''</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">12</td>
+			<td>更新日</td>
+			<td>update_date</td>
+			<td>timestamp(6)&#32;without&#32;time&#32;zone</td>
+			<td>Yes</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">13</td>
+			<td>更新者</td>
+			<td>update_user</td>
+			<td>character&#32;varying(50)</td>
+			<td>Yes</td>
+			<td>''</td>
+			<td></td>
+		</tr>
+	</table>
+
+<br>
+<br>
+	<table border="1">
+		<caption>インデックス情報</caption>
+			<colgroup>
+				<col width="30">
+				<col width="170">
+				<col width="230">
+				<col width="60">
+				<col width="100">
+			</colgroup>
+		<tr>
+			<th>No.</th>
+			<th>インデックス名</th>
+			<th>カラムリスト</th>
+			<th>ユニーク</th>
+			<th>備考</th>
+		</tr>
+		<tr>
+			<td style="text-align:right;">1</td>
+			<td>pfa_human_binary_normal_index1</td>
+			<td>personal_id,human_item_type</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+
+<br>
+<br>
+	<table border="1">
+		<caption>リレーションシップ情報</caption>
+			<colgroup>
+				<col width="30">
+				<col width="120">
+				<col width="160">
+				<col width="120">
+				<col width="160">
+			</colgroup>
+			<th>No.</th>
+			<th>動詞句</th>
+			<th>カラムリスト</th>
+			<th>参照先</th>
+			<th>参照先カラムリスト</th>
+		</tr>
+	</table>
+
+<br>
+<br>
+	<table border="1">
+		<caption>リレーションシップ情報(PK側)</caption>
+			<colgroup>
+				<col width="30">
+				<col width="120">
+				<col width="160">
+				<col width="120">
+				<col width="160">
+			</colgroup>
+		<tr>
+			<th>No.</th>
+			<th>動詞句</th>
+			<th>カラムリスト</th>
+			<th>参照元</th>
+			<th>参照元カラムリスト</th>
+		</tr>
+	</table>
+
+
+	</body>
